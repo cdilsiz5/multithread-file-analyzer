@@ -6,6 +6,7 @@ public class FileStats {
     private long charCount;
 
     public FileStats() {
+        // Boş yapıcı metot (constructor)
     }
 
     public FileStats(int lineCount, long charCount) {
@@ -23,5 +24,9 @@ public class FileStats {
 
     public long getCharCount() {
         return charCount;
+    }
+
+    public void setCharCount(long charCount) {
+        this.charCount = charCount;
     }
 }
