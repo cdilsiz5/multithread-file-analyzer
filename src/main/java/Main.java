@@ -75,7 +75,12 @@ public class Main {
 
         zipTimer.printElapsed("Zip oluşturma süresi");
 
-        // 6. Toplam süre
+        // 6. Dosyaları sil
+        System.out.println("\n==> Analiz tamamlandı. .txt dosyaları siliniyor...");
+        FileUtils.deleteTxtFiles(txtFilePaths);
+        System.out.println("==> Silme işlemi tamamlandı.");
+
+        // 7. Toplam süre
         totalTimer.printElapsed("Toplam çalışma süresi");
     }
 }
